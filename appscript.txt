@@ -1,0 +1,27 @@
+function doGet(e){
+  const output=JSON.stringify({
+    status:"success",
+    data:outputData()
+  })
+  return ContentService.createTextOutput(output).setMimeType(ContentService.MimeType.JSON);
+}
+
+function outputData() {
+  const id='1HOy1I2vW18Nn8yoTZkLaxD1O1ZUAEbRrVJm66CkY2Ms';
+  const sheetData= SpreadsheetApp.openById(id).getSheetByName('Sheet1').getDataRange().getValues();
+  const rows=sheetData.slice(1);  
+  const data=rows.map((row)=>{
+    const myObj={question:row[0],answer:row[1]};
+    myObj.arr =[];
+    for(let i=1; i<6; i++){
+      // Logger.log(row[i]);
+      const val = row[i];
+      if(val){
+        myObj.arr.push(val);
+      }
+    }
+    return myObj;
+  })
+  // Logger.log(data);
+  return data;
+}
