@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+.btn:hover{
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: greenyellow;
+}
+
+.btnNext {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgb(174, 222, 174);
+    border: none;
+    border-radius: 15px;
+}
+.btnNext:hover{
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 15px;
+}
+.btnPlayagain{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+.btnPlayagain:hover{
+    color: white;
+    background-color: rgb(218, 218, 77);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+.message {
+    width: 80%;
+    border: 1px solid #918a8a;
+    /* padding: 5px; */
+    margin: 5px auto;
+    text-align: center;
+}
+
+.message1 {
+    width: 80%;
+    border: 1px solid #918a8a;
+    padding: 10px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid #918a8a;
+    padding: 5px;
+    width: 15%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.box1:hover {
+    background-color: rgb(3, 48, 48);
+    color: white;
+    cursor: pointer;
+}
+
+.correct {
+    /* margin-top: 10px; */
+    background-color: rgb(123, 238, 123);
+    color: white;
+    padding: 10px;
+    border: none;
+    
+    border-radius: 10px;
+}
+
+.wrong {
+    /* margin-top: 10px; */
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.opts{
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
